@@ -1,0 +1,5 @@
+*
+!bin/startup.sh
+!php.conf/cookies.ini
+!php.conf/timezone.ini
+!config.php
