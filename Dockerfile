@@ -13,7 +13,7 @@ RUN apk add --no-cache icu-dev \
  && docker-php-ext-install intl \
  && composer install
 
-FROM php:8.1.8-fpm-alpine3.15
+FROM php:8.1.9-fpm-alpine3.15
 WORKDIR /var/www/framadate
 RUN apk add --no-cache --virtual envsubst-runtime libintl \
  && apk add --no-cache --virtual envsubst-getBuild gettext \
