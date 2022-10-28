@@ -5,7 +5,7 @@ RUN git clone https://framagit.org/framasoft/framadate/framadate.git . \
  && git checkout tags/$version
 RUN rm -rf .git .editorconfig .gitignore .gitlab-ci.yml
 
-FROM composer:2.4.1 as COMPOSER_INSTALL
+FROM composer:2.4.4 as COMPOSER_INSTALL
 COPY --from=CHECKOUT /var/www/framadate /var/www/framadate
 WORKDIR /var/www/framadate
 RUN apk add --no-cache icu-dev \
