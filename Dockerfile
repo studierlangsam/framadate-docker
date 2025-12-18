@@ -1,4 +1,4 @@
-FROM alpine/git:v2.49.1 as CHECKOUT
+FROM alpine/git:v2.52.0 as CHECKOUT
 ARG version
 WORKDIR /var/www/framadate
 RUN git clone https://framagit.org/framasoft/framadate/framadate.git . \
